@@ -24,3 +24,10 @@ const bear = new Bear(3)
 if(bear instanceof Bear) {
     console.log('Hwllo from TypeScript')
 }
+
+/*Arrays*/
+const example1: string[] = ['Hello World'];
+
+const example2: (number | boolean)[] = [1, 2, true];
+
+const example3: boolean[][] = [[true, false]];
