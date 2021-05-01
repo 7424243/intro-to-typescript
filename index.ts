@@ -52,14 +52,24 @@ const example8: {} = {}
 
 /* Parameters */
 import {Person} from './person.model'
-function add(val1: number, val2: number) {
+function add(val1: number, val2: number): number {
     return val1 + val2
 }
 add(1, 3)
 
-function sayHello(person: Person) {
+function sayHello(person: Person): string {
     return `Say Hello to My Little Friend, ${person.firstName}`
 }
 sayHello(new Person({firstName: 'Dylan'}))
+
+//return type when nothing is being returned:
+function voidExample(): void {
+    add(1,2)
+}
+
+//return type when returning an error
+function neverExample(): never {
+    throw Error
+}
 
 
