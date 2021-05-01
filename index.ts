@@ -87,4 +87,7 @@ example10.firstName = 'Dylan';
 example10.middleName = 'Coding God';
 example10.lastName = 'Israel';
 
+/* Barrels */
+import {IBear, IMan, IPig} from './interfaces/index'
+
 
