@@ -42,3 +42,10 @@ import {Names} from './name.enum'
 function totalAge(age1: Age, age2: Age) {
     return age1 + age2
 }
+/* Objects */
+const example6: object = {}
+
+const example7: object = undefined
+
+//an empty object:
+const example8: {} = {}
