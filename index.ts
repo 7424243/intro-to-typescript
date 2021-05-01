@@ -72,4 +72,11 @@ function neverExample(): never {
     throw Error
 }
 
+/* Custom Types */
+type person = {firstName: string}
+
+const example9: person = {firstName: 'Dollan'}
+
+example9.firstName = 'Dylan'
+
 
