@@ -79,4 +79,12 @@ const example9: person = {firstName: 'Dollan'}
 
 example9.firstName = 'Dylan'
 
+/* Interfaces */
+import {IPerson} from './person.interfaces'
+
+const example10: IPerson = {firstName: 'Dollan', middleName: 'Dollan', lastName: 'Dollan'};
+example10.firstName = 'Dylan';
+example10.middleName = 'Coding God';
+example10.lastName = 'Israel';
+
 
