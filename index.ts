@@ -92,7 +92,7 @@ import {IBear, IMan, IPig} from './interfaces/index'
 import { Animal } from './animal.model';
 
 let man: IMan | IPig;
-let bear: IBear;
+let oneBear: IBear;
 let pig: IPig;
 
 type ManBearPig = IBear & IMan & IPig
