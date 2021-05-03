@@ -90,4 +90,13 @@ example10.lastName = 'Israel';
 /* Barrels */
 import {IBear, IMan, IPig} from './interfaces/index'
 
+let man: IMan | IPig;
+let bear: IBear;
+let pig: IPig;
 
+type ManBearPig = IBear & IMan & IPig
+
+let manBearPig: ManBearPig;
+manBearPig.firstName = 'Dylan';
+manBearPig.claws = 3;
+manBearPig.bacom = false;
