@@ -99,4 +99,10 @@ type ManBearPig = IBear & IMan & IPig
 let manBearPig: ManBearPig;
 manBearPig.firstName = 'Dylan';
 manBearPig.claws = 3;
-manBearPig.bacom = false;
+manBearPig.bacon = false;
+
+/* Generics */
+function example<T>(arg: T): T {
+    return arg
+}
+example(5)
