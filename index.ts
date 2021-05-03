@@ -89,6 +89,7 @@ example10.lastName = 'Israel';
 
 /* Barrels */
 import {IBear, IMan, IPig} from './interfaces/index'
+import { Animal } from './animal.model';
 
 let man: IMan | IPig;
 let bear: IBear;
@@ -106,3 +107,10 @@ function example<T>(arg: T): T {
     return arg
 }
 example(5)
+
+/* Acess Modifiers */
+const newBear = new Bear({name: 'Omega', tail: true});
+newBear.claws = 3;
+///newBear.name = '';//this gives an error because it is a readonly value
+//newBear.tail = false;//this gives an error because tail can only be modified in the Bear class
+newBear.add(1, 2);
